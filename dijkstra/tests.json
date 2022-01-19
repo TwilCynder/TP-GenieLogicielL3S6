@@ -1,0 +1,240 @@
+{
+	"graphs": [
+		{
+			"sommets": 5,
+			"chemins": [
+				{
+					"depart": 0,
+					"arrivee": 1,
+					"poids": 5.2
+				},
+				{
+					"depart": 0,
+					"arrivee": 3,
+					"poids": 12.8
+				},
+				{
+					"depart": 0,
+					"arrivee": 2,
+					"poids": 10.3
+				},
+				{
+					"depart": 1,
+					"arrivee": 3,
+					"poids": 5.9
+				},
+				{
+					"depart": 1,
+					"arrivee": 4,
+					"poids": 15.2
+				},
+				{
+					"depart": 2,
+					"arrivee": 1,
+					"poids": 1.5
+				},
+				{
+					"depart": 2,
+					"arrivee": 3,
+					"poids": 2.3
+				},
+				{
+					"depart": 3,
+					"arrivee": 4,
+					"poids": 8.5
+				},
+				{
+					"depart": 4,
+					"arrivee": 2,
+					"poids": 2.7
+				}
+			]
+		},
+		{
+			"sommets": 3,
+			"chemins": [
+				{
+					"depart": 0,
+					"arrivee": 1,
+					"poids": 1.4
+				},
+				{
+					"depart": 0,
+					"arrivee": 1,
+					"poids": 2.1
+				},
+				{
+					"depart": 0,
+					"arrivee": 2,
+					"poids": 4.3
+				},
+				{
+					"depart": 1,
+					"arrivee": 2,
+					"poids": 2.2
+				},
+				{
+					"depart": 2,
+					"arrivee": 1,
+					"poids": 3.2
+				}
+			]
+		},
+		{
+			"sommets": 5,
+			"chemins": [
+				{
+					"depart": 0,
+					"arrivee": 1,
+					"poids": 2.0
+				},
+				{
+					"depart": 0,
+					"arrivee": 2,
+					"poids": 4.0
+				},
+				{
+					"depart": 1,
+					"arrivee": 4,
+					"poids": 3.0
+				},
+				{
+					"depart": 2,
+					"arrivee": 3,
+					"poids": 2.0
+				},
+				{
+					"depart": 3,
+					"arrivee": 1,
+					"poids": 4.0
+				},
+				{
+					"depart": 4,
+					"arrivee": 3,
+					"poids": 3.0
+				}
+			]
+		},
+		,
+		{
+			"sommets": 8,
+			"chemins": [
+				{
+					"depart": 0,
+					"arrivee": 1,
+					"poids": 2.0
+				},
+				{
+					"depart": 0,
+					"arrivee": 2,
+					"poids": 5.0
+				},
+				{
+					"depart": 1,
+					"arrivee": 5,
+					"poids": 4.0
+				},
+				{
+					"depart": 1,
+					"arrivee": 2,
+					"poids": 2.0
+				},
+				{
+					"depart": 2,
+					"arrivee": 3,
+					"poids": 3.0
+				},
+				{
+					"depart": 2,
+					"arrivee": 4,
+					"poids": 6.0
+				},
+				{
+					"depart": 3,
+					"arrivee": 4,
+					"poids": 1.0
+				},
+				{
+					"depart": 3,
+					"arrivee": 5,
+					"poids": 6.0
+				},
+				{
+					"depart": 4,
+					"arrivee": 7,
+					"poids": 4.0
+				},
+				{
+					"depart": 5,
+					"arrivee": 3,
+					"poids": 1.0
+				},
+				{
+					"depart": 5,
+					"arrivee": 6,
+					"poids": 4.0
+				},
+				{
+					"depart": 5,
+					"arrivee": 7,
+					"poids": 4.0
+				},
+				{
+					"depart": 6,
+					"arrivee": 7,
+					"poids": 2.0
+				}
+			]
+		},
+		{
+			"sommets": 8,
+			"chemins": [
+				{
+					"depart": 0,
+					"arrivee": 1,
+					"poids": 1.0
+				},
+				{
+					"depart": 1,
+					"arrivee": 2,
+					"poids": 2.0
+				},
+				{
+					"depart": 2,
+					"arrivee": 3,
+					"poids": 4.0
+				},
+				{
+					"depart": 2,
+					"arrivee": 4,
+					"poids": 4.0
+				},
+				{
+					"depart": 2,
+					"arrivee": 6,
+					"poids": 4.0
+				},
+				{
+					"depart": 3,
+					"arrivee": 5,
+					"poids": 3.0
+				},
+				{
+					"depart": 4,
+					"arrivee": 5,
+					"poids": 2.0
+				},
+				{
+					"depart": 5,
+					"arrivee": 7,
+					"poids": 10.0
+				},
+				{
+					"depart": 6,
+					"arrivee": 7,
+					"poids": 4.0
+				}
+			]
+		}
+	]
+}
