@@ -1,6 +1,6 @@
 package dijkstra;
  
-public class Edge implements Comparable{
+public class Edge implements Comparable<Edge>{
     private int startPoint;
     private int endPoint;
     private float weight;
@@ -32,8 +32,7 @@ public class Edge implements Comparable{
         return false;
     }
     
-    public int compareTo(Object o) {
-        Edge other = (Edge) o;
+    public int compareTo(Edge other) {
         return Double.compare(this.weight, other.weight);
     }
  

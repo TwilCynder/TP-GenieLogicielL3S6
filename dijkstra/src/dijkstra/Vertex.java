@@ -1,6 +1,6 @@
 package dijkstra;
 
-public class Vertex implements Comparable{
+public class Vertex implements Comparable<Vertex>{
 	private int id;
 	private float distance;
 	private Vertex parent;
@@ -40,8 +40,7 @@ public class Vertex implements Comparable{
 		this.parent = parent;
 	}
 	
-	public int compareTo(Object o) {
-		Vertex other = (Vertex) o;
+	public int compareTo(Vertex other) {
 		return Double.compare(this.distance, other.distance);
 	}
 }
