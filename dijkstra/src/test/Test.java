@@ -14,19 +14,30 @@ import utilities.Convertor;
 import utilities.TestResult;
 
 public class Test {
-
 	
-	private static final String testFile = "./test.json";
+	public static class Tester {
+		private Graph[] graphs;
+		private int[] startDijsktra;
+		public Tester(Graph[] graphs, int[] startDijsktra) {
+			this.graphs = graphs;
+			this.startDijsktra = startDijsktra;
+		}
+	}
+	
+	private static final String testFile = "./t1.json";
 	private static final String resultFile = "./result.json";
 
 	
-	private static void addPath(Graph graph,JSONArray chemins) {
+	private static void addPath(Graph graph,JSONArray chemins,Boolean isOriented) {
 		for(Object oChemin : chemins) {
 			JSONObject jChemin = (JSONObject) oChemin;
 			Long depart = (Long) jChemin.get("depart");
 			Long arrivee = (Long) jChemin.get("arrivee");
 			Double poids = (Double) jChemin.get("poids");
 			graph.addEdge(depart.intValue(),arrivee.intValue(),poids.floatValue());
+			if(!isOriented) {
+				graph.addEdge(arrivee.intValue(),depart.intValue(),poids.floatValue());
+			}
 		}
 	}
 	
@@ -35,8 +46,9 @@ public class Test {
 	 * Makes a array of the graphs from the .JSON
 	 * @return the array of graphs
 	 */
-	private static Graph[] getTests() {
+	private static Tester getTests() {
 		Graph[] testGraphs = null;
+		int[] startDijsktra = null;
 		JSONParser parser = new JSONParser();
 		try {
 			Object obj = parser.parse(new FileReader(testFile));
@@ -47,6 +59,7 @@ public class Test {
 			int size = graphs.size();
 			int i = 0;
 			testGraphs = new Graph[size];
+			startDijsktra = new int[size];
 			/**
 			 * for graphs in the .JSON  
 			 */
@@ -55,13 +68,18 @@ public class Test {
 				Long sommets = (Long) jGraph.get("sommets");
 				int iSommets = sommets.intValue();
 				Graph graph = new Graph(iSommets);
-				addPath(graph,(JSONArray)jGraph.get("chemins"));
+				Long start = (Long) jGraph.get("departDijkstra");
+				int iStart = start.intValue();
+				Boolean isOriented = (Boolean) jGraph.get("estOriente");
+				addPath(graph,(JSONArray)jGraph.get("chemins"),isOriented);
+				startDijsktra[i] = iStart;
 				testGraphs[i++] =  graph;
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		return testGraphs;
+		Tester t =new Tester(testGraphs,startDijsktra);
+		return t;
 	}
 	
 	/**
@@ -94,8 +112,9 @@ public class Test {
 	}
 	
 	public static void main(String[] args) {
-		Graph graphs[] = getTests();
-		Result[] expectedResults = getResults();
+		Tester tester = Test.getTests();
+		Graph[] graphs = tester.graphs;
+		Result[] expectedResults = Test.getResults();
 
 		// Some verifications on the read data...
 		if(graphs == null) {
@@ -115,7 +134,7 @@ public class Test {
 		int i = 0;
 		int passed = 0;
 		for(Graph graph : graphs) {
-			Result result = TestGraphs.Dijkstra(graph, 0);
+			Result result = TestGraphs.Dijkstra(graph,tester.startDijsktra[i]);
 			//System.out.println(result);
 			TestResult testResult = expectedResults[i].equals(result);
 			passed += testResult.areEquals() ? 1 : 0;

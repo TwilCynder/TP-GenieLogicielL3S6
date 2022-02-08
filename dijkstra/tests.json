@@ -1,6 +1,8 @@
 {
 	"graphs": [
 		{
+			"estOriente":true,
+			"departDijkstra":0,
 			"sommets": 5,
 			"chemins": [
 				{
@@ -51,6 +53,8 @@
 			]
 		},
 		{
+			"estOriente":true,
+			"departDijkstra":0,
 			"sommets": 3,
 			"chemins": [
 				{
@@ -81,6 +85,8 @@
 			]
 		},
 		{
+			"estOriente":true,
+			"departDijkstra":0,
 			"sommets": 5,
 			"chemins": [
 				{
@@ -117,6 +123,8 @@
 		},
 		,
 		{
+			"estOriente":true,
+			"departDijkstra":0,
 			"sommets": 8,
 			"chemins": [
 				{
@@ -187,6 +195,8 @@
 			]
 		},
 		{
+			"estOriente":true,
+			"departDijkstra":0,
 			"sommets": 8,
 			"chemins": [
 				{
