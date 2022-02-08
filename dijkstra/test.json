@@ -1,0 +1,110 @@
+{
+	"graphs": [
+		{
+			"sommets": 6,
+			"chemins": [
+				{
+					"depart": 0,
+					"arrivee": 1,
+					"poids": 2.0
+				},
+				{
+					"depart": 0,
+					"arrivee": 4,
+					"poids": 3.0
+				},
+				{
+					"depart": 1,
+					"arrivee": 0,
+					"poids": 2.0
+				},
+				{
+					"depart": 4,
+					"arrivee": 0,
+					"poids": 3.0
+				},
+				{
+					"depart": 1,
+					"arrivee": 4,
+					"poids": 4.0
+				},
+				{
+					"depart": 4,
+					"arrivee": 1,
+					"poids": 4.0
+				},
+				{
+					"depart": 1,
+					"arrivee": 2,
+					"poids": 5.0
+				},
+				{
+					"depart": 2,
+					"arrivee": 1,
+					"poids": 5.0
+				},
+				{
+					"depart": 1,
+					"arrivee": 5,
+					"poids": 2.0
+				},
+				{
+					"depart": 5,
+					"arrivee": 1,
+					"poids": 2.0
+				},
+				{
+					"depart": 2,
+					"arrivee": 3,
+					"poids": 2.0
+				},
+				{
+					"depart": 3,
+					"arrivee": 2,
+					"poids": 2.0
+				},
+				{
+					"depart": 2,
+					"arrivee": 5,
+					"poids": 4.0
+				},
+				{
+					"depart": 5,
+					"arrivee": 2,
+					"poids": 4.0
+				},
+				{
+					"depart": 3,
+					"arrivee": 4,
+					"poids": 2.0
+				},
+				{
+					"depart": 4,
+					"arrivee": 3,
+					"poids": 2.0
+				},
+				{
+					"depart": 3,
+					"arrivee": 5,
+					"poids": 5.0
+				},
+				{
+					"depart": 5,
+					"arrivee": 3,
+					"poids": 5.0
+				},
+				{
+					"depart": 4,
+					"arrivee": 5,
+					"poids": 2.0
+				},
+				{
+					"depart": 5,
+					"arrivee": 4,
+					"poids": 2.0
+				}
+			]
+		}
+	]
+
+}
