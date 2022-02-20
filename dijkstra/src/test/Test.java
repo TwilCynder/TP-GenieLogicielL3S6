@@ -24,8 +24,8 @@ public class Test {
 		}
 	}
 	
-	private static final String testFile = "./t1.json";
-	private static final String resultFile = "./result.json";
+	private static final String testFile = "./tests.json";
+	private static final String resultFile = "./results.json";
 
 	
 	private static void addPath(Graph graph,JSONArray chemins,Boolean isOriented) {
