@@ -135,10 +135,10 @@ public class Test {
 		int passed = 0;
 		for(Graph graph : graphs) {
 			Result result = TestGraphs.Dijkstra(graph,tester.startDijsktra[i]);
-			//System.out.println(result);
 			TestResult testResult = expectedResults[i].equals(result);
 			passed += testResult.areEquals() ? 1 : 0;
 			testResult.print(i);
+			//System.out.println(result);
 			i++;
 		}
 		System.out.println("Resultat : ["+passed+"/"+i+"]");
